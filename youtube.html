@@ -1,0 +1,27 @@
+﻿<title>YT Live Search</title><center>
+YouTube Live Stream Search Engine:<br><br>
+
+<form method="post" onsubmit="get_sell_sheet(); return false;">
+     <input id="ytq" type="text" class="searchField" name="search" placeholder="YouTube Live">
+     <input type="submit" class="searchBtn" value="Search"> 
+</form>
+
+<script>
+function get_sell_sheet(){
+  var ytq = document.getElementById("ytq").value;
+  var url = "https://www.youtube.com/results?search_query=" + ytq + "&filters=live%2C+today&lclk=today";
+  // open in same window
+  // window.location.href = url;
+  // open in new window
+  var win = window.open(url, '_blank');
+}
+</script>
+
+<br>
+
+No ad on this page.
+
+<br><br>
+<small><small><small>
+This very simple script is provided by u/officialpvp
+</small></small></small>
